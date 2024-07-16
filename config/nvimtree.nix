@@ -1,5 +1,9 @@
 {
-  plugins.nvim-tree.enable = true;
+  plugins.nvim-tree = {
+    enable = true;
+    actions.windowPicker.enable = false;
+  };
+
   keymaps = [
     {
       mode = "n";

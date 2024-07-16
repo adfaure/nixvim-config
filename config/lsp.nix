@@ -22,7 +22,10 @@
         };
 
         servers = {
+          # python
           pyright.enable = true;
+          # nix
+          nixd.enable = true;
         };
       };
     };
