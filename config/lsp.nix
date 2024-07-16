@@ -26,6 +26,8 @@
           pyright.enable = true;
           # nix
           nixd.enable = true;
+          # typst
+          typst-lsp.enable = true;
         };
       };
     };

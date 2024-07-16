@@ -10,7 +10,16 @@
   '';
 
   plugins.tmux-navigator.enable = true;
-  plugins.airline.enable = true;
+
+  plugins.airline = {
+    enable = true;
+    settings = {
+      powerline_fonts = true;
+      skip_empty_sections = true;
+      theme = "catppuccin";
+    };
+  };
+
   # Start dashboard
   plugins.alpha = {
     enable = true;
@@ -29,9 +38,18 @@
   plugins.glow.enable = true;
   # Highlight same workd under cursor
   plugins.illuminate.enable = true;
-  plugins.navic.enable = true;
-  plugins.nix.enable = true;
+  # undo tree
   plugins.undotree.enable = true;
+  # Code context
+  plugins.barbecue.enable = true;
+
+  # Languages
+  plugins.typst-vim.enable = true;
+  plugins.nix.enable = true;
+
+  # Trying
+  plugins.neoscroll.enable = true;
+  plugins.fidget.enable = true;
 
   opts = {
     tabstop = 2;
@@ -57,6 +75,12 @@
       key = "<leader>c";
       options.silent = true;
       action = "<cmd>Telescope neoclip<cr>";
+    }
+    {
+      mode = "n";
+      key = "<C-H>";
+      options.silent = true;
+      action = "<cmd>TmuxNavigateLeft<cr>";
     }
   ];
 }

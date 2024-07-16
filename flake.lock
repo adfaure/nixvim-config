@@ -166,22 +166,6 @@
         "type": "github"
       }
     },
-    "my-dotfiles": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1716562970,
-        "narHash": "sha256-wvoxgEXRtj1HbFgcaeY2477Sc0XWzh8FVL5PZx9aKiQ=",
-        "owner": "adfaure",
-        "repo": "dotfiles",
-        "rev": "fd7ce143415ead4e0d1ed39088e514be5efc54e0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "adfaure",
-        "repo": "dotfiles",
-        "type": "github"
-      }
-    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -275,7 +259,6 @@
     "root": {
       "inputs": {
         "flake-parts": "flake-parts",
-        "my-dotfiles": "my-dotfiles",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim"
       }
