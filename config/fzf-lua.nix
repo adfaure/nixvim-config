@@ -1,9 +1,22 @@
-{
+{ pkgs, ... }: {
   plugins.fzf-lua = {
     enable = true;
+    settings = {
+      fzf_bin = "${pkgs.skim}/bin/sk";
+      fzf_opts = {
+        "--layout" = "default";
+        "--border" = false;
+        "--no-separator" = false;
+      };
+
+      winopts = { 
+        preview = { default = "bat"; }; 
+      };
+    };
+
     keymaps = {
       "<C-p>" = {
-        action = "find_files";
+        action = "files";
         options = {
           desc = "Fzf-Lua find files";
           silent = true;
