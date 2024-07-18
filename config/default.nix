@@ -1,14 +1,15 @@
-{ pkgs, ... }: {
+{ ... }: {
   # Import all your configuration modules here
-  imports = [ ./telescope.nix ./theme.nix ./nvimtree.nix ./cmp.nix ./lsp.nix ];
+  imports = [
+    ./theme.nix
+    ./nvimtree.nix
+    ./cmp.nix
+    ./lsp.nix
+    # ./telescope.nix
+    ./fzf-lua.nix
+  ];
 
   globals.mapleader = "!"; # Sets the leader key to comma
-
-  extraPlugins = with pkgs.vimPlugins; [ ctrlp ];
-  extraConfigVim = ''
-    nmap <leader>p :CtrlP<cr>
-  '';
-
   plugins.tmux-navigator.enable = true;
 
   plugins.airline = {

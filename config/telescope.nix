@@ -25,12 +25,23 @@
       options.silent = true;
       action = "<cmd>Telescope help_tags<cr>";
     }
-
     {
       mode = "n";
       key = "gD";
       options.silent = true;
       action = "<cmd>Telescope lsp_references<cr>";
+    }
+    {
+      mode = "n";
+      key = "<leader>g";
+      options.silent = true;
+      action = "<cmd>Telescope grep_string<cr>";
+    }
+    {
+      mode = "n";
+      key = "<leader>r";
+      options.silent = true;
+      action = "<cmd>Telescope resume<cr>";
     }
   ];
 }
