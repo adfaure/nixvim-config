@@ -40,6 +40,7 @@
   plugins.neoclip.enable = true;
   # Git integration
   plugins.gitgutter.enable = true;
+  plugins.fugitive.enable = true;
   # Markdown view
   plugins.glow.enable = true;
   # Highlight same workd under cursor

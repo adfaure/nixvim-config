@@ -16,6 +16,7 @@
 
         lspBuf = {
           gd = "definition";
+          gc = "declaration";
           # gD = "references";
           gt = "type_definition";
           gi = "implementation";
