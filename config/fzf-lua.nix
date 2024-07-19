@@ -4,6 +4,11 @@
     settings = {
       fzf_bin = "${pkgs.skim}/bin/sk";
       fzf_color = true;
+      fzf_opts = {
+        "--layout" = "default";
+        "--border" = false;
+        "--no-separator" = false;
+      };
       # FIXME: Highlight color is difficult to read in grep mode and bat
       # winopts = {
       #   preview = { default = "bat"; };
