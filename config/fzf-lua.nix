@@ -3,15 +3,11 @@
     enable = true;
     settings = {
       fzf_bin = "${pkgs.skim}/bin/sk";
-      fzf_opts = {
-        "--layout" = "default";
-        "--border" = false;
-        "--no-separator" = false;
-      };
-
-      winopts = { 
-        preview = { default = "bat"; }; 
-      };
+      fzf_color = true;
+      # FIXME: Highlight color is difficult to read in grep mode and bat
+      # winopts = {
+      #   preview = { default = "bat"; };
+      # };
     };
 
     keymaps = {
@@ -19,6 +15,14 @@
         action = "files";
         options = {
           desc = "Fzf-Lua find files";
+          silent = true;
+        };
+      };
+
+      "<leader>g" = {
+        action = "grep_cword";
+        options = {
+          desc = "Fzf-Lua lsp ref";
           silent = true;
         };
       };
@@ -39,13 +43,6 @@
         };
       };
 
-      "<leader>g" = {
-        action = "grep_cword";
-        options = {
-          desc = "Fzf-Lua lsp ref";
-          silent = true;
-        };
-      };
 
       "<leader>r" = {
         action = "resume";

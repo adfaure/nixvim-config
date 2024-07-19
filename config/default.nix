@@ -7,6 +7,7 @@
     ./lsp.nix
     # ./telescope.nix
     ./fzf-lua.nix
+    ./harpoon.nix
   ];
 
   globals.mapleader = "!"; # Sets the leader key to comma
@@ -28,7 +29,11 @@
   };
 
   # bookmark files
-  plugins.arrow.enable = true;
+  plugins.arrow = {
+    enable = true;
+    settings.show_icons = true;
+  };
+
   # openned tabs
   plugins.bufferline.enable = true;
   # Better yanking
