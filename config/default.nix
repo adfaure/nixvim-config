@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   # Import all your configuration modules here
   imports = [
     ./theme.nix
@@ -12,6 +12,10 @@
 
   globals.mapleader = "!"; # Sets the leader key to comma
   plugins.tmux-navigator.enable = true;
+
+  extraPlugins = [
+    pkgs.vimPlugins.vim-pug
+    pkgs.vimPlugins.nvim-treesitter-parsers.pug ];
 
   plugins.airline = {
     enable = true;
@@ -37,7 +41,7 @@
   # openned tabs
   plugins.bufferline.enable = true;
   # Better yanking
-  plugins.neoclip.enable = true;
+  plugins.yanky.enable = true;
   # Git integration
   plugins.gitgutter.enable = true;
   plugins.fugitive.enable = true;
@@ -55,7 +59,7 @@
   plugins.nix.enable = true;
 
   # Trying
-  plugins.neoscroll.enable = true;
+  # plugins.neoscroll.enable = true;
   plugins.fidget.enable = true;
 
   opts = {
