@@ -32,6 +32,14 @@
         };
       };
 
+      "<leader>s" = {
+        action = "lsp_document_symbols";
+        options = {
+          desc = "Fzf-Lua symbols";
+          silent = true;
+        };
+      };
+
       "<C-g>" = {
         action = "live_grep";
         options = {
