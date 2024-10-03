@@ -40,6 +40,15 @@
         };
       };
 
+
+      "<C-s>" = {
+        action = "lsp_live_workspace_symbols";
+        options = {
+          desc = "Fzf-Lua live grep";
+          silent = true;
+        };
+      };
+
       "<C-g>" = {
         action = "live_grep";
         options = {
@@ -48,7 +57,7 @@
         };
       };
 
-      "gD" = {
+      "gr" = {
         action = "lsp_references";
         options = {
           desc = "Fzf-Lua lsp ref";
