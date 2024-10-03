@@ -14,7 +14,6 @@
       #   preview = { default = "bat"; };
       # };
     };
-
     keymaps = {
       "<C-p>" = {
         action = "files";
@@ -23,7 +22,6 @@
           silent = true;
         };
       };
-
       "<leader>g" = {
         action = "grep_cword";
         options = {
@@ -31,7 +29,6 @@
           silent = true;
         };
       };
-
       "<leader>s" = {
         action = "lsp_document_symbols";
         options = {
@@ -39,8 +36,6 @@
           silent = true;
         };
       };
-
-
       "<C-s>" = {
         action = "lsp_live_workspace_symbols";
         options = {
@@ -48,7 +43,6 @@
           silent = true;
         };
       };
-
       "<C-g>" = {
         action = "live_grep";
         options = {
@@ -56,7 +50,6 @@
           silent = true;
         };
       };
-
       "gr" = {
         action = "lsp_references";
         options = {
@@ -64,8 +57,6 @@
           silent = true;
         };
       };
-
-
       "<leader>r" = {
         action = "resume";
         options = {
