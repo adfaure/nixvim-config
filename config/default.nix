@@ -62,6 +62,9 @@
   # plugins.neoscroll.enable = true;
   plugins.fidget.enable = true;
 
+  plugins.neorg.enable = true;
+  plugins.neorg.lazyLoading = true;
+
   opts = {
     tabstop = 2;
     number = true;
@@ -85,13 +88,7 @@
       mode = "n";
       key = "<leader>c";
       options.silent = true;
-      action = "<cmd>Telescope neoclip<cr>";
-    }
-    {
-      mode = "n";
-      key = "<C-H>";
-      options.silent = true;
-      action = "<cmd>TmuxNavigateLeft<cr>";
+      action = "<cmd>FzfLua<cr>";
     }
   ];
 }

@@ -1,5 +1,8 @@
 {
   plugins = {
+    # For Rust ?
+    rustaceanvim.enable = true;
+
     lsp-status.enable = true;
     lspkind.enable = true;
     treesitter.enable = true;
@@ -38,6 +41,8 @@
         typst-lsp.enable = true;
         # Typescript
         tsserver.enable = true;
+        # Rust
+        # rust-analyzer.enable = true;
       };
     };
   };
