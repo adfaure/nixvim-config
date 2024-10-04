@@ -29,8 +29,17 @@
           silent = true;
         };
       };
-      "<leader>s" = {
+
+      "<leader>ds" = {
         action = "lsp_document_symbols";
+        options = {
+          desc = "Fzf-Lua symbols";
+          silent = true;
+        };
+      };
+
+      "<leader>ws" = {
+        action = "lsp_workspace_symbols";
         options = {
           desc = "Fzf-Lua symbols";
           silent = true;
