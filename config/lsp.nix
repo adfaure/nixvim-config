@@ -25,6 +25,12 @@
           gi = "implementation";
           K = "hover";
           "<F2>" = "rename";
+          # Execute a code action, usually your cursor needs to be on top of an error
+          # or a suggestion from your LSP for this to activate.
+          "<leader>f" = {
+            action = "code_action";
+            desc = "LSP: [C]ode [A]ction";
+          };
         };
 
       };
