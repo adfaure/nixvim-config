@@ -62,8 +62,8 @@
   # plugins.neoscroll.enable = true;
   plugins.fidget.enable = true;
 
-  plugins.neorg.enable = true;
-  plugins.neorg.lazyLoading = true;
+  plugins.neorg.enable = false;
+  plugins.neorg.lazyLoading = false;
 
   opts = {
     tabstop = 2;
