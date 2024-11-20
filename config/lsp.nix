@@ -6,6 +6,7 @@
     lsp-status.enable = true;
     lspkind.enable = true;
     treesitter.enable = true;
+
     lsp = {
       enable = true;
 
@@ -36,6 +37,7 @@
       };
 
       servers = {
+        clangd.enable = true;
         # Python
         pyright.enable = true;
         # Buggy it seems
@@ -49,6 +51,7 @@
         tsserver.enable = true;
         # Rust
         # rust-analyzer.enable = true;
+        helm_ls.enable = true;
       };
     };
   };
