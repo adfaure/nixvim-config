@@ -38,6 +38,10 @@
     settings.show_icons = true;
   };
 
+  clipboard.register = "unnamedplus";
+  clipboard.providers.wl-copy.enable = true;
+  clipboard.providers.xsel.enable = true;
+
   # openned tabs
   plugins.bufferline.enable = true;
   # Better yanking
