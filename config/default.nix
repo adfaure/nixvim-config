@@ -94,5 +94,14 @@
       options.silent = true;
       action = "<cmd>FzfLua<cr>";
     }
+    {
+      # mode = "n";
+      key = "<C-c>";
+      action = ''"+yy'';
+      options = {
+        desc = "copy to the clipboard normal";
+      };
+    }
+
   ];
 }
