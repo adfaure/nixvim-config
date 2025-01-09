@@ -52,6 +52,8 @@
         # Rust
         # rust-analyzer.enable = true;
         helm_ls.enable = true;
+        # Haskell
+        hls.enable = true;
       };
     };
   };
