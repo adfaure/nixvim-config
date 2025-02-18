@@ -37,6 +37,7 @@
       };
 
       servers = {
+        elixirls.enable = true;
         clangd.enable = true;
         # Python
         pyright.enable = true;
