@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   plugins.fzf-lua = {
     enable = true;
     settings = {

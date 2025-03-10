@@ -12,8 +12,7 @@
       enable = true;
 
       settings = {
-        snippet.expand =
-          "function(args) require('luasnip').lsp_expand(args.body) end";
+        snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
 
         # Thanks! https://github.com/JMartJonesy/kickstart.nixvim/blob/7934542168d08a69b3523c4e700e19ec016511a1/plugins/nvim-cmp.nix#L63
         mapping = {
@@ -41,11 +40,11 @@
         };
 
         sources = [
-          { name = "nvim_lsp"; }
-          { name = "nvim_lsp_document_symbol"; }
-          { name = "nvim_lsp_signature_help"; }
-          { name = "treesitter"; }
-          { name = "path"; }
+          {name = "nvim_lsp";}
+          {name = "nvim_lsp_document_symbol";}
+          {name = "nvim_lsp_signature_help";}
+          {name = "treesitter";}
+          {name = "path";}
           {
             name = "buffer";
             # Words from other open buffers can also be suggested.

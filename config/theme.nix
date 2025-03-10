@@ -1,1 +1,1 @@
-{ colorschemes = { catppuccin = { enable = true; }; }; }
+{colorschemes = {catppuccin = {enable = true;};};}

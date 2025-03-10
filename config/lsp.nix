@@ -39,11 +39,11 @@
             desc = "LSP: [C]ode [A]ction";
           };
         };
-
       };
 
       servers = {
         elixirls.enable = true;
+        html.enable = true;
         clangd.enable = true;
         # Python
         pyright.enable = true;
@@ -60,6 +60,7 @@
         # rust-analyzer.enable = true;
         helm_ls.enable = true;
         # Haskell
+        astro.enable = true;
         hls.enable = true;
       };
     };

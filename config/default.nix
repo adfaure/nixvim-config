@@ -1,10 +1,10 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   # Import all your configuration modules here
   imports = [
     ./theme.nix
     ./nvimtree.nix
     ./cmp.nix
-    ./lsp.nix
+    # ./lsp.nix
     # ./telescope.nix
     ./fzf-lua.nix
     ./harpoon.nix
@@ -15,7 +15,8 @@
 
   extraPlugins = [
     pkgs.vimPlugins.vim-pug
-    pkgs.vimPlugins.nvim-treesitter-parsers.pug ];
+    pkgs.vimPlugins.nvim-treesitter-parsers.pug
+  ];
 
   plugins.airline = {
     enable = true;
@@ -82,6 +83,18 @@
     listchars.__raw = "{ tab = '» ', trail = '·', nbsp = '␣' }";
   };
 
+  autoCmd = [
+    {
+      event = ["FileType"];
+      command = ":setlocal expandtab shiftwidth=2 tabstop=2";
+      desc = "expandtab for html/astro files";
+      pattern = [
+        "html"
+        "astro"
+      ];
+    }
+  ];
+
   keymaps = [
     {
       mode = "n";
@@ -102,6 +115,5 @@
         desc = "copy to the clipboard normal";
       };
     }
-
   ];
 }
