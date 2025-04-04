@@ -57,7 +57,7 @@
         # Typescript
         tsserver.enable = true;
         # Rust
-        # rust-analyzer.enable = true;
+        rust-analyzer.enable = true;
         helm_ls.enable = true;
         # Haskell
         astro.enable = true;
