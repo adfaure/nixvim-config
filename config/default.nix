@@ -44,7 +44,7 @@
   clipboard.providers.xsel.enable = true;
 
   # openned tabs
-  plugins.bufferline.enable = true;
+  plugins.bufferline.enable = false;
   # Better yanking
   plugins.yanky.enable = true;
   # Git integration
