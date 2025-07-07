@@ -7,7 +7,6 @@
     # ./lsp.nix
     # ./telescope.nix
     ./fzf-lua.nix
-    ./harpoon.nix
   ];
 
   globals.mapleader = "!"; # Sets the leader key to comma
@@ -18,11 +17,13 @@
     pkgs.vimPlugins.nvim-treesitter-parsers.pug
   ];
 
+  plugins.web-devicons.enable = true;
+
   plugins.airline = {
     enable = true;
     settings = {
-      powerline_fonts = true;
-      skip_empty_sections = true;
+      powerline_fonts = 1;
+      skip_empty_sections = 1;
       theme = "catppuccin";
     };
   };
@@ -68,7 +69,7 @@
   plugins.fidget.enable = true;
 
   plugins.neorg.enable = false;
-  plugins.neorg.lazyLoading = false;
+  plugins.neorg.settings.lazyLoading = false;
 
   opts = {
     tabstop = 2;
