@@ -1,5 +1,4 @@
 {
-
   plugins.nvim-tree = {
     enable = true;
     actions.windowPicker.enable = false;

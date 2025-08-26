@@ -1,5 +1,7 @@
-{
-  plugins = {
+{pkgs, ...}: {
+  plugins = let
+    pyright-package = import ./pyright.nix {inherit pkgs;};
+  in {
     # For Rust ?
     rustaceanvim.enable = true;
 
@@ -46,18 +48,22 @@
         html.enable = true;
         clangd.enable = true;
         # Python
-        pyright.enable = true;
+        pyright = {
+          package = pyright-package.pyright-wrapper;
+          enable = true;
+        };
         # Buggy it seems
         # pylsp.enable = true;
         ruff.enable = true;
         # Nix
         nixd.enable = true;
         # Typst
-        typst-lsp.enable = true;
+        # Has it been removed ?
+        # typst-lsp.enable = true;
         # Typescript
         tsserver.enable = true;
         # Rust
-        rust-analyzer.enable = true;
+        # rust-analyzer.enable = true;
         helm_ls.enable = true;
         # Haskell
         astro.enable = true;

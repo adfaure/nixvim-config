@@ -4,7 +4,7 @@
     ./theme.nix
     ./nvimtree.nix
     ./cmp.nix
-    # ./lsp.nix
+    ./lsp.nix
     # ./telescope.nix
     ./fzf-lua.nix
   ];
