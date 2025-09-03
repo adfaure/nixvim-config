@@ -58,7 +58,8 @@
   # undo tree
   plugins.undotree.enable = true;
   # Code context
-  plugins.barbecue.enable = true;
+  # Repository is now archived and messes up with git blame
+  plugins.barbecue.enable = false;
 
   # Languages
   plugins.typst-vim.enable = true;
