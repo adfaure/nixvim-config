@@ -98,11 +98,11 @@
   ];
 
   keymaps = [
-    {
-      mode = "n";
-      key = "m";
-      action = "<cmd>nohlsearch<CR>";
-    }
+    # {
+    #   mode = "n";
+    #   key = "m";
+    #   action = "<cmd>nohlsearch<CR>";
+    # }
     {
       mode = "n";
       key = "<leader>c";
