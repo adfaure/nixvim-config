@@ -29,6 +29,7 @@
         lspBuf = {
           gd = "definition";
           gc = "declaration";
+          # Handled with fzf-lua
           # gD = "references";
           gt = "type_definition";
           gi = "implementation";

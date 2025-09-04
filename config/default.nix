@@ -15,6 +15,9 @@
   extraPlugins = [
     pkgs.vimPlugins.vim-pug
     pkgs.vimPlugins.nvim-treesitter-parsers.pug
+
+    # Vim-cool disables search highlighting when you are done searching and re-enables it when you search again.
+    pkgs.vimPlugins.vim-cool
   ];
 
   plugins.web-devicons.enable = true;
@@ -98,6 +101,7 @@
   ];
 
   keymaps = [
+    # Replaced by vim-cool
     # {
     #   mode = "n";
     #   key = "m";
