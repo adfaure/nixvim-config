@@ -29,7 +29,13 @@
           silent = true;
         };
       };
-
+      "<C-g>" = {
+        action = "live_grep";
+        options = {
+          desc = "Fzf-Lua live grep";
+          silent = true;
+        };
+      };
       "<leader>ds" = {
         action = "lsp_document_symbols";
         options = {
@@ -52,13 +58,7 @@
           silent = true;
         };
       };
-      "<C-g>" = {
-        action = "live_grep";
-        options = {
-          desc = "Fzf-Lua live grep";
-          silent = true;
-        };
-      };
+
       "gr" = {
         action = "lsp_references";
         options = {
