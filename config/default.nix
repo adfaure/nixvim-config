@@ -7,6 +7,7 @@
     ./lsp.nix
     # ./telescope.nix
     ./fzf-lua.nix
+    ./dap.nix
   ];
 
   globals.mapleader = "!"; # Sets the leader key to comma

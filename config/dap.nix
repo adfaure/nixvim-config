@@ -7,5 +7,9 @@
     enable = true;
   };
 
+  plugins.dap-python = {
+    enable = true;
+  };
+
   keymaps = [ ];
 }
