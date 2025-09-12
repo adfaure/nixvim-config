@@ -6,8 +6,8 @@
     ./cmp.nix
     ./lsp.nix
     # ./telescope.nix
+    # ./dap.nix
     ./fzf-lua.nix
-    ./dap.nix
   ];
 
   globals.mapleader = "!"; # Sets the leader key to comma
@@ -22,6 +22,10 @@
   ];
 
   plugins.web-devicons.enable = true;
+  plugins.which-key = {
+    enable = true;
+    autoLoad = true;
+  };
 
   plugins.airline = {
     enable = true;
