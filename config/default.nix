@@ -8,6 +8,7 @@
     # ./telescope.nix
     # ./dap.nix
     ./fzf-lua.nix
+    ./chadtree.nix
   ];
 
   globals.mapleader = "!"; # Sets the leader key to comma
@@ -72,6 +73,9 @@
   # Languages
   plugins.typst-vim.enable = true;
   plugins.nix.enable = true;
+
+  # Wild menu improvment
+  plugins.wilder.enable = true;
 
   # Trying
   # plugins.neoscroll.enable = true;
