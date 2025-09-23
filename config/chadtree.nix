@@ -1,6 +1,9 @@
 {
   plugins.chadtree = {
     enable = true;
+    ignore = {
+      nameExact = [ "__pycache__" ".git" ];
+    };
   };
 
   keymaps = [
