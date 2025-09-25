@@ -6,7 +6,7 @@
     ./cmp.nix
     ./lsp.nix
     # ./telescope.nix
-    ./dap.nix
+    # ./dap.nix
     ./fzf-lua.nix
     ./chadtree.nix
   ];
@@ -34,6 +34,15 @@
       powerline_fonts = 1;
       skip_empty_sections = 1;
       theme = "catppuccin";
+    };
+  };
+
+  plugins.neotest = {
+    enable = true;
+    adapters = {
+      python = {
+        enable = true;
+      };
     };
   };
 
