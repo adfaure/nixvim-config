@@ -140,14 +140,17 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1758636228,
-        "narHash": "sha256-sDcnzB2As0Hf9Y95P6XfvGNK5DoE1i6QVhzmpyQZyUc=",
-        "path": "/home/adfaure/Code/nixvim",
-        "type": "path"
+        "lastModified": 1758644076,
+        "narHash": "sha256-4vGbp7k74PzbNn9zl/In+QvMnXePfoWvufBBNMPPJis=",
+        "owner": "adfaure",
+        "repo": "nixvim",
+        "rev": "22967b8aeb2747c8d2fe67c897cf4e99b71af254",
+        "type": "github"
       },
       "original": {
-        "path": "/home/adfaure/Code/nixvim",
-        "type": "path"
+        "owner": "adfaure",
+        "repo": "nixvim",
+        "type": "github"
       }
     },
     "nuschtosSearch": {

@@ -6,7 +6,7 @@
     ./cmp.nix
     ./lsp.nix
     # ./telescope.nix
-    # ./dap.nix
+    ./dap.nix
     ./fzf-lua.nix
     ./chadtree.nix
   ];
