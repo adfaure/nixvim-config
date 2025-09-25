@@ -11,5 +11,14 @@
     enable = true;
   };
 
+  plugins.neotest = {
+    enable = true;
+    adapters = {
+      python = {
+        enable = true;
+      };
+    };
+  };
+
   keymaps = [ ];
 }
