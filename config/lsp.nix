@@ -49,12 +49,16 @@
         html.enable = true;
         clangd.enable = true;
         # Python
-        pyright = {
-          package = pyright-package.pyright-wrapper;
+        # pyright = {
+        #   package = pyright-package.pyright-wrapper;
+        #   enable = true;
+        # };
+
+        # pylyzer doesn't seem to pickup the current python installation
+        pylyzer = {
+          # package = pyright-package.pylyzer-wrapper;
           enable = true;
         };
-        # Buggy it seems
-        # pylsp.enable = true;
         ruff.enable = true;
         # Nix
         nixd.enable = true;
@@ -63,6 +67,7 @@
         # typst-lsp.enable = true;
         # Typescript
         tsserver.enable = true;
+        protols.enable = true;
         # Rust
         # rust-analyzer.enable = true;
         helm_ls.enable = true;
