@@ -49,16 +49,15 @@
         html.enable = true;
         clangd.enable = true;
         # Python
-        # pyright = {
-        #   package = pyright-package.pyright-wrapper;
-        #   enable = true;
-        # };
-
-        # pylyzer doesn't seem to pickup the current python installation
-        pylyzer = {
-          # package = pyright-package.pylyzer-wrapper;
+        pyright = {
+          package = pyright-package.pyright-wrapper;
           enable = true;
         };
+        # pylyzer doesn't seem to pickup the current python installation
+        # pylyzer = {
+        #   # package = pyright-package.pylyzer-wrapper;
+        #   enable = true;
+        # };
         ruff.enable = true;
         # Nix
         nixd.enable = true;
