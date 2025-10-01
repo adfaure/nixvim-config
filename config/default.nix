@@ -9,6 +9,7 @@
     # ./dap.nix
     ./fzf-lua.nix
     ./chadtree.nix
+    ./multicursors.nix
   ];
 
   globals.mapleader = "!"; # Sets the leader key to comma

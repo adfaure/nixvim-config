@@ -25,7 +25,7 @@
       "<leader>g" = {
         action = "grep_cword";
         options = {
-          desc = "Fzf-Lua lsp ref";
+          desc = "Fzf-Lua grep_cword";
           silent = true;
         };
       };
@@ -39,15 +39,14 @@
       "<leader>ds" = {
         action = "lsp_document_symbols";
         options = {
-          desc = "Fzf-Lua symbols";
+          desc = "Fzf-Lua Lsp symbols";
           silent = true;
         };
       };
-
-      "<leader>ws" = {
-        action = "lsp_workspace_symbols";
+      "<leader>dg" = {
+        action = "lsp_document_diagnostics";
         options = {
-          desc = "Fzf-Lua symbols";
+          desc = "Fzf-Lua Lsp diagnostic";
           silent = true;
         };
       };
@@ -58,7 +57,6 @@
           silent = true;
         };
       };
-
       "gr" = {
         action = "lsp_references";
         options = {
