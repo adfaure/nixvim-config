@@ -71,8 +71,8 @@
         # rust-analyzer.enable = true;
         helm_ls.enable = true;
         # Haskell
-        astro.enable = true;
         hls.enable = true;
+        astro.enable = true;
       };
     };
   };

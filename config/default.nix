@@ -38,6 +38,8 @@
     };
   };
 
+  plugins.helm.enable = true;
+
   plugins.neotest = {
     enable = true;
     adapters = {
