@@ -8,7 +8,7 @@
     # ./telescope.nix
     # ./dap.nix
     ./fzf-lua.nix
-    ./chadtree.nix
+    # ./chadtree.nix
     ./multicursors.nix
   ];
 
@@ -32,8 +32,6 @@
   plugins.airline = {
     enable = true;
     settings = {
-      powerline_fonts = 1;
-      skip_empty_sections = 1;
       theme = "catppuccin";
     };
   };
