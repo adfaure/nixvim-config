@@ -8,7 +8,7 @@
     # ./telescope.nix
     # ./dap.nix
     ./fzf-lua.nix
-    # ./chadtree.nix
+    ./chadtree.nix
     ./multicursors.nix
   ];
 
