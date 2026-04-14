@@ -38,6 +38,8 @@
 
   plugins.helm.enable = true;
 
+  plugins.aerial.enable = true;
+
   plugins.neotest = {
     enable = true;
     adapters = {
@@ -131,6 +133,11 @@
       key = "<leader>c";
       options.silent = true;
       action = "<cmd>FzfLua<cr>";
+    }
+    {
+      key = "<leader>o";
+      mode = [ "n" ];
+      action = "<cmd>AerialToggle<CR>";
     }
     {
       # mode = "n";
