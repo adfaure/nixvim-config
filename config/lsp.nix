@@ -65,13 +65,15 @@
         # Has it been removed ?
         # typst-lsp.enable = true;
         # Typescript
-        tsserver.enable = true;
+        ts_ls.enable = true;
         protols.enable = true;
         # Rust
         # rust-analyzer.enable = true;
         helm_ls.enable = true;
         # Haskell
         hls.enable = true;
+        hls.installGhc = true;
+
         astro.enable = true;
       };
     };
